@@ -1,0 +1,11 @@
+Advanced Validation Example
+Enter a Valid(Any) Email!
+{% withcopy messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      {{message}}
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+  Email:
